@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350" role="img">
+<title>한 번에 바꾸기보다, 오늘 한 구간만 바꿔보기</title>
+<defs>
+<linearGradient id="card-bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#101720" />
+<stop offset="0.58" stop-color="#0f5155" />
+<stop offset="1" stop-color="#1c6f73" />
+</linearGradient>
+<clipPath id="scene-clip"><rect x="76" y="76" width="928" height="690" rx="34" /></clipPath>
+</defs>
+<rect width="1080" height="1350" fill="url(#card-bg)" />
+<rect x="76" y="76" width="928" height="690" rx="34" fill="rgba(255,255,255,0.72)" /><image href="../assets/2026-07-06-장난감-앞에서-형제-싸움이-커지는-순간-card-06.webp" x="76" y="76" width="928" height="690" preserveAspectRatio="xMidYMax slice" clip-path="url(#scene-clip)" /><rect x="76" y="76" width="928" height="690" rx="34" fill="none" stroke="#f0a17f" stroke-opacity="0.35" stroke-width="3" />
+<rect x="76" y="804" width="156" height="10" rx="5" fill="#f0a17f" />
+<text x="76" y="786" fill="#f0a17f" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="34" font-weight="860" letter-spacing="0">저장 포인트</text>
+<text x="76" y="835" fill="#ffffff" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="58" font-weight="860" letter-spacing="0">한 번에 바꾸기보다, 오늘</text>
+<text x="76" y="905" fill="#ffffff" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="58" font-weight="860" letter-spacing="0">한 구간만 바꿔보기</text>
+<text x="76" y="1064" fill="#eaf4f0" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="36" font-weight="780" letter-spacing="0">블로그에서 자세한 실행 순서를</text>
+<text x="76" y="1114" fill="#eaf4f0" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="36" font-weight="780" letter-spacing="0">확인하세요.</text>
+<text x="76" y="1222" fill="#eaf4f0" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="30" font-weight="760" letter-spacing="0">육아 성장 블로그</text>
+<text x="1004" y="1222" fill="#eaf4f0" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="30" font-weight="760" text-anchor="end" letter-spacing="0">06/06</text>
+</svg>

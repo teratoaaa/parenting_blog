@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>영상 한 편만 보기로 했는데 늘 두 편이 되는 집에서 요약 카드</title>
+<meta name="description" content="영상이나 게임을 한 번만 하기로 했는데 매번 길어질 때, 끄는 순간의 실랑이를 줄이기 위해 보기 전에 정해두면 좋은 약속을 정리했습니다." />
+<link rel="stylesheet" href="../styles.css" />
+<script>
+(() => {
+  const blockedEvents = ["copy", "cut", "paste", "contextmenu", "dragstart"];
+  for (const eventName of blockedEvents) {
+    document.addEventListener(eventName, (event) => event.preventDefault(), { capture: true });
+  }
+  document.addEventListener("selectstart", (event) => {
+    if (!event.target.closest("a, button")) {
+      event.preventDefault();
+    }
+  }, { capture: true });
+  document.addEventListener("keydown", (event) => {
+    const key = event.key.toLowerCase();
+    const command = event.ctrlKey || event.metaKey;
+    if ((command && ["a", "c", "p", "s", "u", "v", "x"].includes(key)) || event.key === "F12") {
+      event.preventDefault();
+    }
+    if (command && event.shiftKey && ["c", "i", "j"].includes(key)) {
+      event.preventDefault();
+    }
+  }, { capture: true });
+})();
+</script>
+</head>
+<body>
+<div class="site-shell">
+<aside class="site-sidebar"><div class="site-brand-block"><a class="site-brand" href="../index.html"><span>육아 성장</span><strong>육아 성장 블로그</strong></a><p>부모의 매일 문제를 작게 풀어내는 실용 육아 노트</p></div><nav class="side-nav" aria-label="콘텐츠 분류"><a class="side-nav-link" href="../index.html"><span>전체</span><b>19</b></a><span class="side-nav-link disabled"><span>일반 육아</span><b>0</b></span><a class="side-nav-link active" href="../index.html#cat-routine"><span>생활 루틴</span><b>11</b></a><a class="side-nav-link" href="../index.html#cat-emotion"><span>감정·훈육</span><b>3</b></a><a class="side-nav-link" href="../index.html#cat-reading"><span>책·놀이</span><b>3</b></a><a class="side-nav-link" href="../index.html#cat-health"><span>건강·준비</span><b>1</b></a><a class="side-nav-link" href="../index.html#cat-newborn"><span>신생아</span><b>1</b></a></nav><div class="side-recent"><p>최근 글</p><a href="../posts/2026-07-08-%EB%86%80%EC%95%84%EC%A4%98%EB%9D%BC%EB%8A%94-%EB%A7%90%EC%9D%B4-%EB%B2%84%EA%B1%B0%EC%9A%B4-%EB%82%A0%EC%97%94-10%EB%B6%84%EB%A7%8C-%EA%B0%99%EC%9D%B4-%EC%95%89%EA%B8%B0.html"><span>육아 · 놀이와 발달</span>놀아줘라는 말이 버거운 날엔 10분만 같이 앉기</a>
+<a href="../posts/2026-07-07-%EC%98%81%EC%83%81-%ED%95%9C-%ED%8E%B8%EB%A7%8C-%EB%B3%B4%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8A%94%EB%8D%B0-%EB%8A%98-%EB%91%90-%ED%8E%B8%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%A7%91%EC%97%90%EC%84%9C.html"><span>육아 · 디지털 습관</span>영상 한 편만 보기로 했는데 늘 두 편이 되는 집에서</a>
+<a href="../posts/2026-07-07-%EA%B7%B8%EB%A6%BC%EC%B1%85%EC%9D%84-%EC%9E%90%EA%BE%B8-%EB%84%98%EA%B8%B0%EB%8A%94-%EC%95%84%EC%9D%B4%EC%99%80-%ED%8E%B8%ED%95%98%EA%B2%8C-%EC%9D%BD%EB%8A%94-%EB%B2%95.html"><span>육아 · 책 읽기 루틴</span>그림책을 자꾸 넘기는 아이와 편하게 읽는 법</a>
+<a href="../posts/2026-07-07-%EB%AC%BC-%ED%95%9C-%EB%AA%A8%EA%B8%88-%EB%8D%94-%ED%99%94%EC%9E%A5%EC%8B%A4-%ED%95%9C-%EB%B2%88-%EB%8D%94%EA%B0%80-%EC%9D%B4%EC%96%B4%EC%A7%80%EB%8A%94-%EB%B0%A4.html"><span>육아 · 수면 루틴</span>물 한 모금 더, 화장실 한 번 더가 이어지는 밤</a></div><a class="side-foot" href="../privacy.html">개인정보 처리방침</a></aside>
+<div class="site-main">
+<main>
+<section class="social-page"><div class="section-title"><p>요약 카드</p><h1>영상 한 편만 보기로 했는데 늘 두 편이 되는 집에서</h1></div><div class="share-story" data-share-story><div class="share-stage"><div class="share-card-stack" data-share-swipe><article class="share-card cover has-image is-active" data-share-card="0" aria-hidden="false"><figure class="share-card-image"><img src="../assets/2026-07-07-%EC%98%81%EC%83%81-%ED%95%9C-%ED%8E%B8%EB%A7%8C-%EB%B3%B4%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8A%94%EB%8D%B0-%EB%8A%98-%EB%91%90-%ED%8E%B8%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%A7%91%EC%97%90%EC%84%9C-card-01.png" alt="영상 한 편만 보기로 했는데 늘 두 편이 되는 집에서 요약 카드 표지 일러스트" loading="eager" decoding="async" /></figure><span>육아 · 디지털 습관</span><h2>영상 한 편만 보기로 했는데 늘 두 편이 되는 집에서</h2><p>오늘 집에서 바로 해볼 수 있는 작은 루틴</p></article><article class="share-card detail has-image" data-share-card="1" aria-hidden="true" hidden><figure class="share-card-image"><img src="../assets/2026-07-07-%EC%98%81%EC%83%81-%ED%95%9C-%ED%8E%B8%EB%A7%8C-%EB%B3%B4%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8A%94%EB%8D%B0-%EB%8A%98-%EB%91%90-%ED%8E%B8%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%A7%91%EC%97%90%EC%84%9C-card-02.png" alt="보기 전에 언제 끝나는지 정한다. 내용을 보여주는 요약 카드 일러스트" loading="eager" decoding="async" /></figure><span>01</span><p>보기 전에 언제 끝나는지 정한다.</p></article><article class="share-card detail has-image" data-share-card="2" aria-hidden="true" hidden><figure class="share-card-image"><img src="../assets/2026-07-07-%EC%98%81%EC%83%81-%ED%95%9C-%ED%8E%B8%EB%A7%8C-%EB%B3%B4%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8A%94%EB%8D%B0-%EB%8A%98-%EB%91%90-%ED%8E%B8%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%A7%91%EC%97%90%EC%84%9C-card-03.png" alt="끝난 뒤 바로 할 일을 준비해둔다. 내용을 보여주는 요약 카드 일러스트" loading="eager" decoding="async" /></figure><span>02</span><p>끝난 뒤 바로 할 일을 준비해둔다.</p></article><article class="share-card detail has-image" data-share-card="3" aria-hidden="true" hidden><figure class="share-card-image"><img src="../assets/2026-07-07-%EC%98%81%EC%83%81-%ED%95%9C-%ED%8E%B8%EB%A7%8C-%EB%B3%B4%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8A%94%EB%8D%B0-%EB%8A%98-%EB%91%90-%ED%8E%B8%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%A7%91%EC%97%90%EC%84%9C-card-04.png" alt="부모도 끄는 순간 새 협상을 열지 않는다. 내용을 보여주는 요약 카드 일러스트" loading="eager" decoding="async" /></figure><span>03</span><p>부모도 끄는 순간 새 협상을 열지 않는다.</p></article><article class="share-card detail has-image" data-share-card="4" aria-hidden="true" hidden><figure class="share-card-image"><img src="../assets/2026-07-07-%EC%98%81%EC%83%81-%ED%95%9C-%ED%8E%B8%EB%A7%8C-%EB%B3%B4%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8A%94%EB%8D%B0-%EB%8A%98-%EB%91%90-%ED%8E%B8%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%A7%91%EC%97%90%EC%84%9C-card-05.png" alt="끄는 순간보다 시작 전이 중요하다. 아이가 이미 영상에 몰입한 뒤에는 부모 말이 잘 들어가지 않는다. 내용을 보여주는 요약 카드 일러스트" loading="eager" decoding="async" /></figure><span>04</span><p>끄는 순간보다 시작 전이 중요하다</p></article><article class="share-card ending has-image" data-share-card="5" aria-hidden="true" hidden><figure class="share-card-image"><img src="../assets/2026-07-07-%EC%98%81%EC%83%81-%ED%95%9C-%ED%8E%B8%EB%A7%8C-%EB%B3%B4%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8A%94%EB%8D%B0-%EB%8A%98-%EB%91%90-%ED%8E%B8%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%A7%91%EC%97%90%EC%84%9C-card-06.png" alt="영상 한 편만 보기로 했는데 늘 두 편이 되는 집에서 저장 포인트 일러스트" loading="eager" decoding="async" /></figure><span>저장 포인트</span><h2>한 번에 바꾸기보다, 오늘 한 구간만 바꿔보기</h2><p>블로그에서 자세한 실행 순서를 확인하세요.</p></article></div><div class="share-controls"><button class="share-arrow" type="button" data-share-prev aria-label="이전 요약 카드">‹</button><span class="share-counter" data-share-counter>1 / 6</span><button class="share-arrow" type="button" data-share-next aria-label="다음 요약 카드">›</button></div></div><aside class="share-rail" aria-label="요약 카드 목록"><p class="share-rail-title">카드 흐름</p><button class="share-step is-active" type="button" data-share-step="0" aria-current="step"><span class="share-step-index">01</span><strong>영상 한 편만 보기로 했는데 늘 두 편이 되는 집에서</strong><small>오늘 집에서 바로 해볼 수 있는 작은 루틴</small></button><button class="share-step" type="button" data-share-step="1"><span class="share-step-index">02</span><strong>보기 전에 언제 끝나는지 정한다.</strong></button><button class="share-step" type="button" data-share-step="2"><span class="share-step-index">03</span><strong>끝난 뒤 바로 할 일을 준비해둔다.</strong></button><button class="share-step" type="button" data-share-step="3"><span class="share-step-index">04</span><strong>부모도 끄는 순간 새 협상을 열지 않는다.</strong></button><button class="share-step" type="button" data-share-step="4"><span class="share-step-index">05</span><strong>끄는 순간보다 시작 전이 중요하다</strong></button><button class="share-step" type="button" data-share-step="5"><span class="share-step-index">06</span><strong>한 번에 바꾸기보다, 오늘 한 구간만 바꿔보기</strong><small>블로그에서 자세한 실행 순서를 확인하세요.</small></button></aside></div><nav class="post-nav"><a href="../posts/2026-07-07-%EC%98%81%EC%83%81-%ED%95%9C-%ED%8E%B8%EB%A7%8C-%EB%B3%B4%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8A%94%EB%8D%B0-%EB%8A%98-%EB%91%90-%ED%8E%B8%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%A7%91%EC%97%90%EC%84%9C.html">글로 돌아가기</a></nav></section><script>
+(() => {
+  const stories = document.querySelectorAll("[data-share-story]");
+  for (const story of stories) {
+    const cards = Array.from(story.querySelectorAll("[data-share-card]"));
+    const steps = Array.from(story.querySelectorAll("[data-share-step]"));
+    const counter = story.querySelector("[data-share-counter]");
+    const prev = story.querySelector("[data-share-prev]");
+    const next = story.querySelector("[data-share-next]");
+    const swipeTarget = story.querySelector("[data-share-swipe]");
+    if (!cards.length) continue;
+
+    let current = cards.findIndex((card) => card.classList.contains("is-active"));
+    if (current < 0) current = 0;
+    let swipeStartX = 0;
+    let swipeStartY = 0;
+    let swipeActive = false;
+
+    const show = (index) => {
+      current = (index + cards.length) % cards.length;
+      cards.forEach((card, cardIndex) => {
+        const active = cardIndex === current;
+        card.hidden = !active;
+        card.classList.toggle("is-active", active);
+        card.setAttribute("aria-hidden", active ? "false" : "true");
+      });
+      steps.forEach((step, stepIndex) => {
+        const active = stepIndex === current;
+        step.classList.toggle("is-active", active);
+        if (active) {
+          step.setAttribute("aria-current", "step");
+        } else {
+          step.removeAttribute("aria-current");
+        }
+      });
+      if (counter) counter.textContent = `${current + 1} / ${cards.length}`;
+    };
+
+    steps.forEach((step) => {
+      step.addEventListener("click", () => show(Number(step.dataset.shareStep || 0)));
+    });
+    prev?.addEventListener("click", () => show(current - 1));
+    next?.addEventListener("click", () => show(current + 1));
+    swipeTarget?.addEventListener("pointerdown", (event) => {
+      swipeStartX = event.clientX;
+      swipeStartY = event.clientY;
+      swipeActive = true;
+    });
+    swipeTarget?.addEventListener("pointerup", (event) => {
+      if (!swipeActive) return;
+      swipeActive = false;
+      const dx = event.clientX - swipeStartX;
+      const dy = event.clientY - swipeStartY;
+      if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.2) {
+        show(current + (dx < 0 ? 1 : -1));
+      }
+    });
+    swipeTarget?.addEventListener("pointercancel", () => {
+      swipeActive = false;
+    });
+    show(current);
+  }
+})();
+</script>
+</main>
+</div>
+</div>
+</body>
+</html>

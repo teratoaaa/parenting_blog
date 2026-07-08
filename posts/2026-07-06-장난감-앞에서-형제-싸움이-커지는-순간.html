@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>장난감 앞에서 형제 싸움이 커지는 순간</title>
+<meta name="description" content="형제자매 장난감 싸움에서 부모가 즉석 재판관이 되지 않고 순서, 소유, 교대 규칙을 작게 정하는 방법입니다." />
+<link rel="stylesheet" href="../styles.css" />
+<script>
+(() => {
+  const blockedEvents = ["copy", "cut", "paste", "contextmenu", "dragstart"];
+  for (const eventName of blockedEvents) {
+    document.addEventListener(eventName, (event) => event.preventDefault(), { capture: true });
+  }
+  document.addEventListener("selectstart", (event) => {
+    if (!event.target.closest("a, button")) {
+      event.preventDefault();
+    }
+  }, { capture: true });
+  document.addEventListener("keydown", (event) => {
+    const key = event.key.toLowerCase();
+    const command = event.ctrlKey || event.metaKey;
+    if ((command && ["a", "c", "p", "s", "u", "v", "x"].includes(key)) || event.key === "F12") {
+      event.preventDefault();
+    }
+    if (command && event.shiftKey && ["c", "i", "j"].includes(key)) {
+      event.preventDefault();
+    }
+  }, { capture: true });
+})();
+</script>
+</head>
+<body>
+<div class="site-shell">
+<aside class="site-sidebar"><div class="site-brand-block"><a class="site-brand" href="../index.html"><span>육아 성장</span><strong>육아 성장 블로그</strong></a><p>부모의 매일 문제를 작게 풀어내는 실용 육아 노트</p></div><nav class="side-nav" aria-label="콘텐츠 분류"><a class="side-nav-link" href="../index.html"><span>전체</span><b>19</b></a><span class="side-nav-link disabled"><span>일반 육아</span><b>0</b></span><a class="side-nav-link" href="../index.html#cat-routine"><span>생활 루틴</span><b>11</b></a><a class="side-nav-link active" href="../index.html#cat-emotion"><span>감정·훈육</span><b>3</b></a><a class="side-nav-link" href="../index.html#cat-reading"><span>책·놀이</span><b>3</b></a><a class="side-nav-link" href="../index.html#cat-health"><span>건강·준비</span><b>1</b></a><a class="side-nav-link" href="../index.html#cat-newborn"><span>신생아</span><b>1</b></a></nav><div class="side-recent"><p>최근 글</p><a href="../posts/2026-07-08-%EB%86%80%EC%95%84%EC%A4%98%EB%9D%BC%EB%8A%94-%EB%A7%90%EC%9D%B4-%EB%B2%84%EA%B1%B0%EC%9A%B4-%EB%82%A0%EC%97%94-10%EB%B6%84%EB%A7%8C-%EA%B0%99%EC%9D%B4-%EC%95%89%EA%B8%B0.html"><span>육아 · 놀이와 발달</span>놀아줘라는 말이 버거운 날엔 10분만 같이 앉기</a>
+<a href="../posts/2026-07-07-%EC%98%81%EC%83%81-%ED%95%9C-%ED%8E%B8%EB%A7%8C-%EB%B3%B4%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8A%94%EB%8D%B0-%EB%8A%98-%EB%91%90-%ED%8E%B8%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%A7%91%EC%97%90%EC%84%9C.html"><span>육아 · 디지털 습관</span>영상 한 편만 보기로 했는데 늘 두 편이 되는 집에서</a>
+<a href="../posts/2026-07-07-%EA%B7%B8%EB%A6%BC%EC%B1%85%EC%9D%84-%EC%9E%90%EA%BE%B8-%EB%84%98%EA%B8%B0%EB%8A%94-%EC%95%84%EC%9D%B4%EC%99%80-%ED%8E%B8%ED%95%98%EA%B2%8C-%EC%9D%BD%EB%8A%94-%EB%B2%95.html"><span>육아 · 책 읽기 루틴</span>그림책을 자꾸 넘기는 아이와 편하게 읽는 법</a>
+<a href="../posts/2026-07-07-%EB%AC%BC-%ED%95%9C-%EB%AA%A8%EA%B8%88-%EB%8D%94-%ED%99%94%EC%9E%A5%EC%8B%A4-%ED%95%9C-%EB%B2%88-%EB%8D%94%EA%B0%80-%EC%9D%B4%EC%96%B4%EC%A7%80%EB%8A%94-%EB%B0%A4.html"><span>육아 · 수면 루틴</span>물 한 모금 더, 화장실 한 번 더가 이어지는 밤</a></div><a class="side-foot" href="../privacy.html">개인정보 처리방침</a></aside>
+<div class="site-main">
+<main>
+<section class="article-hero"><figure class="article-hero-media"><img src="../assets/2026-07-06-%EC%9E%A5%EB%82%9C%EA%B0%90-%EC%95%9E%EC%97%90%EC%84%9C-%ED%98%95%EC%A0%9C-%EC%8B%B8%EC%9B%80%EC%9D%B4-%EC%BB%A4%EC%A7%80%EB%8A%94-%EC%88%9C%EA%B0%84-story-01.png" alt="장난감 앞에서 형제 싸움이 커지는 순간에서 부모와 아이가 함께 상황을 바꾸는 장면" loading="eager" decoding="async" /></figure><div class="hero-content article-hero-content"><p>육아 · 형제 갈등</p><h1>장난감 앞에서 형제 싸움이 커지는 순간</h1><span>형제자매 장난감 싸움에서 부모가 즉석 재판관이 되지 않고 순서, 소유, 교대 규칙을 작게 정하는 방법입니다.</span><time>2026-07-06</time><a class="hero-cta ghost" href="../social/2026-07-06-%EC%9E%A5%EB%82%9C%EA%B0%90-%EC%95%9E%EC%97%90%EC%84%9C-%ED%98%95%EC%A0%9C-%EC%8B%B8%EC%9B%80%EC%9D%B4-%EC%BB%A4%EC%A7%80%EB%8A%94-%EC%88%9C%EA%B0%84.html" data-summary-open="summary-card-dialog">요약 카드 보기</a></div></section><dialog class="summary-dialog" id="summary-card-dialog" data-summary-dialog aria-label="요약 카드 보기"><div class="summary-dialog-panel"><div class="summary-dialog-top"><strong>요약 카드</strong><button class="summary-dialog-close" type="button" data-summary-close aria-label="닫기">×</button></div><div class="share-story summary-story" data-share-story><div class="share-stage"><div class="share-card-stack" data-share-swipe><article class="share-card cover has-image is-active" data-share-card="0" aria-hidden="false"><figure class="share-card-image"><img src="../assets/2026-07-06-%EC%9E%A5%EB%82%9C%EA%B0%90-%EC%95%9E%EC%97%90%EC%84%9C-%ED%98%95%EC%A0%9C-%EC%8B%B8%EC%9B%80%EC%9D%B4-%EC%BB%A4%EC%A7%80%EB%8A%94-%EC%88%9C%EA%B0%84-card-01.png" alt="장난감 앞에서 형제 싸움이 커지는 순간 요약 카드 표지 일러스트" loading="eager" decoding="async" /></figure><span>육아 · 형제 갈등</span><h2>장난감 앞에서 형제 싸움이 커지는 순간</h2><p>오늘 집에서 바로 해볼 수 있는 작은 루틴</p></article><article class="share-card detail has-image" data-share-card="1" aria-hidden="true" hidden><figure class="share-card-image"><img src="../assets/2026-07-06-%EC%9E%A5%EB%82%9C%EA%B0%90-%EC%95%9E%EC%97%90%EC%84%9C-%ED%98%95%EC%A0%9C-%EC%8B%B8%EC%9B%80%EC%9D%B4-%EC%BB%A4%EC%A7%80%EB%8A%94-%EC%88%9C%EA%B0%84-card-02.png" alt="형제자매 싸움에서 부모가 매번 누가 맞는지 판정하려 하면 갈등이 더 길어질 수 있다. 내용을 보여주는 요약 카드 일러스트" loading="eager" decoding="async" /></figure><span>01</span><p>형제자매 싸움에서 부모가 매번 누가 맞는지 판정하려 하면 갈등이 더 길어질 수 있다.</p></article><article class="share-card detail has-image" data-share-card="2" aria-hidden="true" hidden><figure class="share-card-image"><img src="../assets/2026-07-06-%EC%9E%A5%EB%82%9C%EA%B0%90-%EC%95%9E%EC%97%90%EC%84%9C-%ED%98%95%EC%A0%9C-%EC%8B%B8%EC%9B%80%EC%9D%B4-%EC%BB%A4%EC%A7%80%EB%8A%94-%EC%88%9C%EA%B0%84-card-03.png" alt="먼저 정할 것은 공평한 감정 배분이 아니라 장난감의 소유, 순서, 몸의 경계다. 내용을 보여주는 요약 카드 일러스트" loading="eager" decoding="async" /></figure><span>02</span><p>먼저 정할 것은 공평한 감정 배분이 아니라 장난감의 소유, 순서, 몸의 경계다.</p></article><article class="share-card detail has-image" data-share-card="3" aria-hidden="true" hidden><figure class="share-card-image"><img src="../assets/2026-07-06-%EC%9E%A5%EB%82%9C%EA%B0%90-%EC%95%9E%EC%97%90%EC%84%9C-%ED%98%95%EC%A0%9C-%EC%8B%B8%EC%9B%80%EC%9D%B4-%EC%BB%A4%EC%A7%80%EB%8A%94-%EC%88%9C%EA%B0%84-card-04.png" alt="“같이 놀아”보다 “지금 쓰는 사람, 기다리는 사람, 바꾸는 시간”이 더 구체적이다. 내용을 보여주는 요약 카드 일러스트" loading="eager" decoding="async" /></figure><span>03</span><p>“같이 놀아”보다 “지금 쓰는 사람, 기다리는 사람, 바꾸는 시간”이 더 구체적이다.</p></article><article class="share-card detail has-image" data-share-card="4" aria-hidden="true" hidden><figure class="share-card-image"><img src="../assets/2026-07-06-%EC%9E%A5%EB%82%9C%EA%B0%90-%EC%95%9E%EC%97%90%EC%84%9C-%ED%98%95%EC%A0%9C-%EC%8B%B8%EC%9B%80%EC%9D%B4-%EC%BB%A4%EC%A7%80%EB%8A%94-%EC%88%9C%EA%B0%84-card-05.png" alt="장난감 싸움이 커지는 순간. 한 아이가 자동차를 들고 놀고 있는데 다른 아이가 다가와 “나도 할래”라고 말한다. 내용을 보여주는 요약 카드 일러스트" loading="eager" decoding="async" /></figure><span>04</span><p>장난감 싸움이 커지는 순간</p></article><article class="share-card ending has-image" data-share-card="5" aria-hidden="true" hidden><figure class="share-card-image"><img src="../assets/2026-07-06-%EC%9E%A5%EB%82%9C%EA%B0%90-%EC%95%9E%EC%97%90%EC%84%9C-%ED%98%95%EC%A0%9C-%EC%8B%B8%EC%9B%80%EC%9D%B4-%EC%BB%A4%EC%A7%80%EB%8A%94-%EC%88%9C%EA%B0%84-card-06.png" alt="장난감 앞에서 형제 싸움이 커지는 순간 저장 포인트 일러스트" loading="eager" decoding="async" /></figure><span>저장 포인트</span><h2>한 번에 바꾸기보다, 오늘 한 구간만 바꿔보기</h2><p>블로그에서 자세한 실행 순서를 확인하세요.</p></article></div><div class="share-controls"><button class="share-arrow" type="button" data-share-prev aria-label="이전 요약 카드">‹</button><span class="share-counter" data-share-counter>1 / 6</span><button class="share-arrow" type="button" data-share-next aria-label="다음 요약 카드">›</button></div></div><aside class="share-rail" aria-label="요약 카드 목록"><p class="share-rail-title">카드 흐름</p><button class="share-step is-active" type="button" data-share-step="0" aria-current="step"><span class="share-step-index">01</span><strong>장난감 앞에서 형제 싸움이 커지는 순간</strong><small>오늘 집에서 바로 해볼 수 있는 작은 루틴</small></button><button class="share-step" type="button" data-share-step="1"><span class="share-step-index">02</span><strong>형제자매 싸움에서 부모가 매번 누가 맞는지 판정하려 하면 갈등이 더 길어질 수 있다.</strong></button><button class="share-step" type="button" data-share-step="2"><span class="share-step-index">03</span><strong>먼저 정할 것은 공평한 감정 배분이 아니라 장난감의 소유, 순서, 몸의 경계다.</strong></button><button class="share-step" type="button" data-share-step="3"><span class="share-step-index">04</span><strong>“같이 놀아”보다 “지금 쓰는 사람, 기다리는 사람, 바꾸는 시간”이 더 구체적이다.</strong></button><button class="share-step" type="button" data-share-step="4"><span class="share-step-index">05</span><strong>장난감 싸움이 커지는 순간</strong></button><button class="share-step" type="button" data-share-step="5"><span class="share-step-index">06</span><strong>한 번에 바꾸기보다, 오늘 한 구간만 바꿔보기</strong><small>블로그에서 자세한 실행 순서를 확인하세요.</small></button></aside></div></div></dialog><article class="post-detail"><section class="article-section"><h2>공평함보다 순서부터 정하기</h2><ul><li>형제자매 싸움에서 부모가 매번 누가 맞는지 판정하려 하면 갈등이 더 길어질 수 있다.</li><li>먼저 정할 것은 공평한 감정 배분이 아니라 장난감의 소유, 순서, 몸의 경계다.</li><li>“같이 놀아”보다 “지금 쓰는 사람, 기다리는 사람, 바꾸는 시간”이 더 구체적이다.</li></ul></section>
+<section class="article-section"><h2>장난감 싸움이 커지는 순간</h2><p>한 아이가 자동차를 들고 놀고 있는데 다른 아이가 다가와 “나도 할래”라고 말한다. 처음에는 말로 시작하지만 곧 손이 나가고, 부모는 “둘이 사이좋게 놀아야지”라고 말한다. 그런데 아이들은 더 크게 억울해한다. 한쪽은 뺏겼다고 느끼고, 다른 한쪽은 늘 기다리기만 한다고 느낀다.</p>
+<p>형제자매 갈등에서 부모는 자주 재판관이 된다. 누가 먼저 잡았는지, 누가 더 오래 썼는지, 누가 먼저 울었는지를 판단하려고 한다. 하지만 매번 판정하면 아이들은 규칙보다 부모의 판결을 기다리게 된다.</p>
+<p>필요한 것은 완벽한 공평함이 아니라 반복 가능한 놀이 규칙이다.</p></section>
+<section class="article-section"><h2>끼어들기 전에 보는 사실 세 가지</h2><p>형제자매 관계는 나이 차이, 기질, 피로도, 공간, 장난감 수에 따라 달라진다. 특히 어린아이는 “같이 쓰자”라는 말의 의미를 아직 충분히 이해하지 못할 수 있다. 함께 쓰기는 자동으로 되는 성격이 아니라 연습해야 하는 기술이다.</p>
+<p>갈등이 몸싸움으로 자주 이어지는 집이라면 장난감 판정보다 공간을 나누고 몸을 먼저 멈추는 규칙이 필요하다. 어느 한쪽이 계속 손해 본다고 느끼지 않도록 쓰는 차례와 기다리는 차례를 둘 다 보장해야 한다.</p></section>
+<section class="article-section"><h2>누가 먼저 쓸지 정하기</h2><p>장난감 싸움에서 먼저 정할 규칙은 세 가지다.</p>
+<ul><li>지금 손에 들고 쓰는 사람은 끝낼 시간을 가진다.</li><li>기다리는 사람은 다음 차례가 언제인지 안다.</li><li>몸을 밀거나 빼앗는 행동은 멈춘다.</li></ul>
+<p>부모의 문장은 이렇게 짧게 만들 수 있다.</p>
+<p>“지금은 형이 쓰는 차례야. 동생은 이 모래시계가 끝나면 다음 차례야. 손으로 뺏지는 않아.”</p>
+<p>중요한 것은 아이 둘 모두에게 예측 가능한 기준을 주는 것이다. “동생이니까 양보해” 또는 “형이니까 참아”는 한쪽에게 계속 손해 보는 감각을 남길 수 있다.</p></section>
+<section class="article-section timeline-section"><div class="section-eyebrow">순서대로 따라하기</div><h2>10분 놀이 약속 예시</h2><div class="timeline-list"><article class="timeline-item"><span>1</span><h3>시작 전: 공동 장난감과 개인 장난감 나누기</h3><p>모든 장난감을 함께 쓰라고 하면 갈등이 커진다. 아이에게도 건드리지 않았으면 하는 물건이 있다. 개인 장난감과 공동 장난감을 먼저 나눈다.</p>
+<ul><li>“이 자동차는 오늘 형 개인 장난감이야.”</li><li>“이 블록 바구니는 같이 쓰는 장난감이야.”</li><li>“개인 장난감은 물어보고 만져.”</li></ul>
+<p>소유를 인정해야 나눔도 가능해진다.</p></article><article class="timeline-item"><span>2</span><h3>놀이 중: 차례를 시간으로 보이게 하기</h3><p>“조금 있다가”는 아이에게 너무 흐릿하다. 모래시계, 노래 한 곡, 블록 5개 쌓기처럼 끝이 보이는 기준을 둔다.</p>
+<ul><li>“노래가 끝나면 바꾸자.”</li><li>“블록 5개를 더 쌓고 동생 차례야.”</li><li>“기다리는 동안 이 퍼즐을 고를 수 있어.”</li></ul>
+<p>기다리는 아이에게도 할 일이 있어야 한다. 빈손으로 기다리게 하면 갈등이 다시 커진다.</p></article><article class="timeline-item"><span>3</span><h3>싸움이 났을 때: 판정보다 규칙 반복하기</h3><p>부모가 누가 먼저였는지 모를 때도 많다. 그럴 때는 판정보다 규칙으로 돌아간다.</p>
+<ul><li>“손으로 뺏는 건 멈춰.”</li><li>“지금 들고 있던 사람은 마무리 시간을 가져.”</li><li>“다음 차례는 기다리는 사람이야.”</li></ul>
+<p>울음이 있더라도 규칙은 짧게 유지한다. 감정은 인정하고, 행동 기준은 흔들지 않는다.</p></article></div></section>
+<section class="article-section step-section"><div class="section-eyebrow">작게 시작하기</div><h2>싸움 하나만 줄이기</h2><div class="step-grid"><article class="step-card"><span>1</span><p>자주 싸우는 장난감 3개를 적는다.</p></article><article class="step-card"><span>2</span><p>그중 개인 장난감과 공동 장난감을 나눈다.</p></article><article class="step-card"><span>3</span><p>공동 장난감은 차례를 바꾸는 기준을 정한다. 예: 모래시계, 노래 한 곡, 5분.</p></article><article class="step-card"><span>4</span><p>기다리는 아이가 할 대체 활동을 하나 정한다.</p></article><article class="step-card"><span>5</span><p>싸움이 났을 때 부모가 반복할 문장을 한 가지로 고정한다.</p></article></div></section>
+<section class="article-section insight-section"><div class="section-eyebrow">상황별 적용</div><h2>아이마다 억울해하는 이유가 다르다</h2><div class="insight-grid"><article class="insight-card"><p>나이 차이가 크면 같은 시간을 공평하게 나누기보다 각자 할 수 있는 역할을 다르게 준다.</p></article><article class="insight-card"><p>새 장난감은 처음부터 공동 장난감으로 두지 말고 한 아이가 충분히 탐색할 시간을 준다.</p></article><article class="insight-card"><p>피곤한 저녁에는 협동 놀이보다 각자 놀이가 더 안전할 수 있다.</p></article><article class="insight-card"><p>한 아이가 계속 양보한다면 부모가 “기다리는 차례”만 보지 말고 “쓰는 차례”도 보장해야 한다.</p></article><article class="insight-card"><p>몸싸움이 시작되면 장난감 판정보다 몸을 분리하고 안전을 먼저 확보한다.</p></article></div></section>
+<section class="article-section"><h2>부모가 계속 심판이 되지 않으려면</h2><p>형제자매 싸움에서 부모가 매번 완벽하게 공평할 수는 없다. 아이들도 부모의 설명을 늘 즉시 받아들이지 않는다. 그래서 규칙은 복잡하면 오래가지 않는다.</p>
+<p>“지금 쓰는 사람”, “기다리는 사람”, “바꾸는 기준”만 반복해도 충분하다. 아이들은 처음에는 불만을 말하겠지만, 같은 기준이 반복되면 조금씩 예측한다. 부모의 목표는 싸움을 0으로 만드는 것이 아니라, 싸움이 났을 때 돌아갈 길을 만드는 것이다.</p></section>
+<section class="article-section checklist-section"><div class="section-eyebrow">저장용 체크</div><h2>놀이 전에 정해둘 약속</h2><ul class="check-grid"><li>자주 싸우는 장난감을 파악했는가?</li><li>개인 장난감과 공동 장난감을 구분했는가?</li><li>차례를 바꾸는 기준이 아이 눈에 보이는가?</li><li>기다리는 아이에게 대체 활동이 있는가?</li><li>“형이니까”, “동생이니까” 같은 역할 고정 표현을 줄였는가?</li><li>때리기, 밀기, 물건 던지기 같은 안전 문제가 반복되지는 않는가?</li></ul></section>
+<section class="article-section reference-section"><div class="section-eyebrow">출처 확인</div><h2>자료</h2><ul class="reference-list"><li><a href="https://www.healthychildren.org/English/family-life/family-dynamics/Pages/Sibling-Rivalry.aspx">Sibling Rivalry</a></li><li><a href="https://www.cdc.gov/child-development/positive-parenting-tips/index.html">CDC Positive Parenting Tips</a></li></ul></section></article><nav class="post-nav"><a href="../index.html">글 목록으로</a></nav><script>
+(() => {
+  const stories = document.querySelectorAll("[data-share-story]");
+  for (const story of stories) {
+    const cards = Array.from(story.querySelectorAll("[data-share-card]"));
+    const steps = Array.from(story.querySelectorAll("[data-share-step]"));
+    const counter = story.querySelector("[data-share-counter]");
+    const prev = story.querySelector("[data-share-prev]");
+    const next = story.querySelector("[data-share-next]");
+    const swipeTarget = story.querySelector("[data-share-swipe]");
+    if (!cards.length) continue;
+
+    let current = cards.findIndex((card) => card.classList.contains("is-active"));
+    if (current < 0) current = 0;
+    let swipeStartX = 0;
+    let swipeStartY = 0;
+    let swipeActive = false;
+
+    const show = (index) => {
+      current = (index + cards.length) % cards.length;
+      cards.forEach((card, cardIndex) => {
+        const active = cardIndex === current;
+        card.hidden = !active;
+        card.classList.toggle("is-active", active);
+        card.setAttribute("aria-hidden", active ? "false" : "true");
+      });
+      steps.forEach((step, stepIndex) => {
+        const active = stepIndex === current;
+        step.classList.toggle("is-active", active);
+        if (active) {
+          step.setAttribute("aria-current", "step");
+        } else {
+          step.removeAttribute("aria-current");
+        }
+      });
+      if (counter) counter.textContent = `${current + 1} / ${cards.length}`;
+    };
+
+    steps.forEach((step) => {
+      step.addEventListener("click", () => show(Number(step.dataset.shareStep || 0)));
+    });
+    prev?.addEventListener("click", () => show(current - 1));
+    next?.addEventListener("click", () => show(current + 1));
+    swipeTarget?.addEventListener("pointerdown", (event) => {
+      swipeStartX = event.clientX;
+      swipeStartY = event.clientY;
+      swipeActive = true;
+    });
+    swipeTarget?.addEventListener("pointerup", (event) => {
+      if (!swipeActive) return;
+      swipeActive = false;
+      const dx = event.clientX - swipeStartX;
+      const dy = event.clientY - swipeStartY;
+      if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.2) {
+        show(current + (dx < 0 ? 1 : -1));
+      }
+    });
+    swipeTarget?.addEventListener("pointercancel", () => {
+      swipeActive = false;
+    });
+    show(current);
+  }
+})();
+</script><script>
+(() => {
+  const closeDialog = (dialog) => {
+    if (typeof dialog.close === "function" && dialog.open) {
+      dialog.close();
+    } else {
+      dialog.removeAttribute("open");
+    }
+    document.body.classList.remove("summary-dialog-open");
+  };
+
+  for (const opener of document.querySelectorAll("[data-summary-open]")) {
+    const dialog = document.getElementById(opener.getAttribute("data-summary-open") || "");
+    if (!dialog) continue;
+    opener.addEventListener("click", (event) => {
+      event.preventDefault();
+      if (typeof dialog.showModal === "function") {
+        dialog.showModal();
+      } else {
+        dialog.setAttribute("open", "");
+      }
+      document.body.classList.add("summary-dialog-open");
+    });
+  }
+
+  for (const dialog of document.querySelectorAll("[data-summary-dialog]")) {
+    dialog.querySelectorAll("[data-summary-close]").forEach((button) => {
+      button.addEventListener("click", () => closeDialog(dialog));
+    });
+    dialog.addEventListener("click", (event) => {
+      if (event.target === dialog) closeDialog(dialog);
+    });
+    dialog.addEventListener("close", () => {
+      document.body.classList.remove("summary-dialog-open");
+    });
+  }
+})();
+</script>
+</main>
+</div>
+</div>
+</body>
+</html>

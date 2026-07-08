@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>육아 성장 블로그 개인정보 처리방침</title>
+<meta name="description" content="개인정보 처리방침" />
+<link rel="stylesheet" href="styles.css" />
+<script>
+(() => {
+  const blockedEvents = ["copy", "cut", "paste", "contextmenu", "dragstart"];
+  for (const eventName of blockedEvents) {
+    document.addEventListener(eventName, (event) => event.preventDefault(), { capture: true });
+  }
+  document.addEventListener("selectstart", (event) => {
+    if (!event.target.closest("a, button")) {
+      event.preventDefault();
+    }
+  }, { capture: true });
+  document.addEventListener("keydown", (event) => {
+    const key = event.key.toLowerCase();
+    const command = event.ctrlKey || event.metaKey;
+    if ((command && ["a", "c", "p", "s", "u", "v", "x"].includes(key)) || event.key === "F12") {
+      event.preventDefault();
+    }
+    if (command && event.shiftKey && ["c", "i", "j"].includes(key)) {
+      event.preventDefault();
+    }
+  }, { capture: true });
+})();
+</script>
+</head>
+<body>
+<div class="site-shell">
+<aside class="site-sidebar"><div class="site-brand-block"><a class="site-brand" href="index.html"><span>육아 성장</span><strong>육아 성장 블로그</strong></a><p>부모의 매일 문제를 작게 풀어내는 실용 육아 노트</p></div><nav class="side-nav" aria-label="콘텐츠 분류"><a class="side-nav-link active" href="index.html"><span>전체</span><b>19</b></a><span class="side-nav-link disabled"><span>일반 육아</span><b>0</b></span><a class="side-nav-link" href="index.html#cat-routine"><span>생활 루틴</span><b>11</b></a><a class="side-nav-link" href="index.html#cat-emotion"><span>감정·훈육</span><b>3</b></a><a class="side-nav-link" href="index.html#cat-reading"><span>책·놀이</span><b>3</b></a><a class="side-nav-link" href="index.html#cat-health"><span>건강·준비</span><b>1</b></a><a class="side-nav-link" href="index.html#cat-newborn"><span>신생아</span><b>1</b></a></nav><div class="side-recent"><p>최근 글</p><a href="posts/2026-07-08-%EB%86%80%EC%95%84%EC%A4%98%EB%9D%BC%EB%8A%94-%EB%A7%90%EC%9D%B4-%EB%B2%84%EA%B1%B0%EC%9A%B4-%EB%82%A0%EC%97%94-10%EB%B6%84%EB%A7%8C-%EA%B0%99%EC%9D%B4-%EC%95%89%EA%B8%B0.html"><span>육아 · 놀이와 발달</span>놀아줘라는 말이 버거운 날엔 10분만 같이 앉기</a>
+<a href="posts/2026-07-07-%EC%98%81%EC%83%81-%ED%95%9C-%ED%8E%B8%EB%A7%8C-%EB%B3%B4%EA%B8%B0%EB%A1%9C-%ED%96%88%EB%8A%94%EB%8D%B0-%EB%8A%98-%EB%91%90-%ED%8E%B8%EC%9D%B4-%EB%90%98%EB%8A%94-%EC%A7%91%EC%97%90%EC%84%9C.html"><span>육아 · 디지털 습관</span>영상 한 편만 보기로 했는데 늘 두 편이 되는 집에서</a>
+<a href="posts/2026-07-07-%EA%B7%B8%EB%A6%BC%EC%B1%85%EC%9D%84-%EC%9E%90%EA%BE%B8-%EB%84%98%EA%B8%B0%EB%8A%94-%EC%95%84%EC%9D%B4%EC%99%80-%ED%8E%B8%ED%95%98%EA%B2%8C-%EC%9D%BD%EB%8A%94-%EB%B2%95.html"><span>육아 · 책 읽기 루틴</span>그림책을 자꾸 넘기는 아이와 편하게 읽는 법</a>
+<a href="posts/2026-07-07-%EB%AC%BC-%ED%95%9C-%EB%AA%A8%EA%B8%88-%EB%8D%94-%ED%99%94%EC%9E%A5%EC%8B%A4-%ED%95%9C-%EB%B2%88-%EB%8D%94%EA%B0%80-%EC%9D%B4%EC%96%B4%EC%A7%80%EB%8A%94-%EB%B0%A4.html"><span>육아 · 수면 루틴</span>물 한 모금 더, 화장실 한 번 더가 이어지는 밤</a></div><a class="side-foot" href="privacy.html">개인정보 처리방침</a></aside>
+<div class="site-main">
+<main>
+<article class="post-detail"><h1>개인정보 처리방침</h1><p>육아 성장 블로그는 콘텐츠 운영과 서비스 개선을 위해 필요한 최소한의 기술적 정보를 사용할 수 있습니다.</p><p>광고, 분석, 제휴 링크를 도입하는 경우 각 제공자의 정책과 고지를 함께 따릅니다.</p><p>문의 채널과 상세 정책은 서비스 공개 전 최종 검토 단계에서 보강합니다.</p></article>
+</main>
+</div>
+</div>
+</body>
+</html>
