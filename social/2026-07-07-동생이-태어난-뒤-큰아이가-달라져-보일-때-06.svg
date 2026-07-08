@@ -9,7 +9,7 @@
 <clipPath id="scene-clip"><rect x="76" y="76" width="928" height="690" rx="34" /></clipPath>
 </defs>
 <rect width="1080" height="1350" fill="url(#card-bg)" />
-<rect x="76" y="76" width="928" height="690" rx="34" fill="rgba(255,255,255,0.72)" /><image href="../assets/2026-07-07-동생이-태어난-뒤-큰아이가-달라져-보일-때-card-06.webp" x="76" y="76" width="928" height="690" preserveAspectRatio="xMidYMax slice" clip-path="url(#scene-clip)" /><rect x="76" y="76" width="928" height="690" rx="34" fill="none" stroke="#f0a17f" stroke-opacity="0.35" stroke-width="3" />
+<rect x="76" y="76" width="928" height="690" rx="34" fill="rgba(255,255,255,0.72)" /><image href="../assets/sibling-conflict-card-ending.webp" x="76" y="76" width="928" height="690" preserveAspectRatio="xMidYMax slice" clip-path="url(#scene-clip)" /><rect x="76" y="76" width="928" height="690" rx="34" fill="none" stroke="#f0a17f" stroke-opacity="0.35" stroke-width="3" />
 <rect x="76" y="804" width="156" height="10" rx="5" fill="#f0a17f" />
 <text x="76" y="786" fill="#f0a17f" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="34" font-weight="860" letter-spacing="0">저장 포인트</text>
 <text x="76" y="835" fill="#ffffff" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="58" font-weight="860" letter-spacing="0">한 번에 바꾸기보다, 오늘</text>

@@ -9,7 +9,7 @@
 <clipPath id="scene-clip"><rect x="76" y="76" width="928" height="690" rx="34" /></clipPath>
 </defs>
 <rect width="1080" height="1350" fill="url(#card-bg)" />
-<rect x="76" y="76" width="928" height="690" rx="34" fill="rgba(255,255,255,0.72)" /><image href="../assets/2026-07-07-영상-한-편만-보기로-했는데-늘-두-편이-되는-집에서-card-05.webp" x="76" y="76" width="928" height="690" preserveAspectRatio="xMidYMax slice" clip-path="url(#scene-clip)" /><rect x="76" y="76" width="928" height="690" rx="34" fill="none" stroke="#d86b4f" stroke-opacity="0.35" stroke-width="3" />
+<rect x="76" y="76" width="928" height="690" rx="34" fill="rgba(255,255,255,0.72)" /><image href="../assets/screen-time-card-ending.webp" x="76" y="76" width="928" height="690" preserveAspectRatio="xMidYMax slice" clip-path="url(#scene-clip)" /><rect x="76" y="76" width="928" height="690" rx="34" fill="none" stroke="#d86b4f" stroke-opacity="0.35" stroke-width="3" />
 <rect x="76" y="804" width="156" height="10" rx="5" fill="#d86b4f" />
 <text x="76" y="786" fill="#d86b4f" font-family="Pretendard, Apple SD Gothic Neo, Noto Sans KR, sans-serif" font-size="34" font-weight="860" letter-spacing="0">04</text>
 
