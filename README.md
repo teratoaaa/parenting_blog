@@ -19,4 +19,4 @@ python3 scripts/publish_parenting_blog.py --push
 ```
 
 - image_optimized: True
-- converted_webp: 52
+- converted_webp: 152
