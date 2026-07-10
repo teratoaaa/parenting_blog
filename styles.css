@@ -820,7 +820,7 @@ body.summary-dialog-open {
   min-height: 0;
   gap: 0;
   justify-content: flex-end;
-  padding: 76px 24px 26px;
+  padding: 68px 24px 22px;
   overflow: hidden;
   border: 0;
   border-radius: 20px;
@@ -830,6 +830,14 @@ body.summary-dialog-open {
   overflow-wrap: break-word;
   color: #fff;
   isolation: isolate;
+}
+.share-card.has-image:not(.generated-card)::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  z-index: 1;
+  height: 43%;
+  background: linear-gradient(180deg, rgba(6, 39, 39, 0), rgba(6, 39, 39, 0.78) 30%, rgba(6, 39, 39, 0.96));
 }
 .share-card.has-image:not(.generated-card) .share-card-image {
   position: absolute;
@@ -846,8 +854,8 @@ body.summary-dialog-open {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(7, 20, 22, 0.08) 0%, rgba(7, 20, 22, 0.16) 34%, rgba(6, 39, 39, 0.90) 74%, rgba(6, 39, 39, 0.97) 100%),
-    linear-gradient(90deg, rgba(7, 20, 22, 0.24), rgba(7, 20, 22, 0.02) 56%);
+    linear-gradient(180deg, rgba(7, 20, 22, 0.03) 0%, rgba(7, 20, 22, 0.08) 46%, rgba(6, 39, 39, 0.38) 72%, rgba(6, 39, 39, 0.78) 100%),
+    linear-gradient(90deg, rgba(7, 20, 22, 0.14), rgba(7, 20, 22, 0.02) 52%);
 }
 .share-card.has-image:not(.generated-card) .share-card-image img {
   object-fit: cover;
@@ -857,12 +865,13 @@ body.summary-dialog-open {
 .share-card.has-image:not(.generated-card) > h2,
 .share-card.has-image:not(.generated-card) > p {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   margin: 0;
-  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.32);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.34);
 }
 .share-card.has-image:not(.generated-card) > span {
   position: absolute;
+  z-index: 2;
   top: 24px;
   left: 24px;
   display: inline-flex;
@@ -878,26 +887,28 @@ body.summary-dialog-open {
 }
 .share-card.has-image:not(.generated-card) > h2 {
   color: #fff;
-  font-size: clamp(28px, 3.4vw, 40px);
-  line-height: 1.08;
+  font-size: clamp(23px, 2.55vw, 31px);
+  line-height: 1.12;
 }
 .share-card.has-image:not(.generated-card) > p {
-  margin-top: 14px;
+  margin-top: 10px;
   color: rgba(255, 255, 255, 0.94);
-  font-size: clamp(16px, 1.55vw, 19px);
-  line-height: 1.42;
-  font-weight: 900;
+  font-size: clamp(13px, 1.18vw, 16px);
+  line-height: 1.46;
+  font-weight: 850;
 }
 .share-card.cover.has-image:not(.generated-card) > h2 {
-  font-size: clamp(34px, 4.7vw, 52px);
+  font-size: clamp(30px, 3.7vw, 42px);
+  line-height: 1.1;
 }
 .share-card.cover.has-image:not(.generated-card) > p,
 .share-card.ending.has-image:not(.generated-card) > p {
-  font-size: clamp(17px, 2.1vw, 22px);
-  line-height: 1.32;
+  font-size: clamp(14px, 1.45vw, 18px);
+  line-height: 1.38;
 }
 .share-card.ending.has-image:not(.generated-card) > h2 {
-  font-size: clamp(30px, 4vw, 44px);
+  font-size: clamp(27px, 3.25vw, 37px);
+  line-height: 1.12;
 }
 .share-controls {
   display: flex;
