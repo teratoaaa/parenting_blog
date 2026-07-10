@@ -814,6 +814,81 @@ body.summary-dialog-open {
 .share-card.ending p {
   color: #fff;
 }
+.summary-card-ui-full-bleed-cover .share-card.cover.has-image {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  min-height: 0;
+  gap: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  border-radius: 20px;
+  background: #0d3938;
+  box-shadow: 0 24px 54px rgba(20, 34, 37, 0.18);
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.summary-card-ui-full-bleed-cover .share-card.cover.has-image .share-card-image {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  height: 100%;
+  aspect-ratio: auto;
+  border: 0;
+  border-radius: inherit;
+  background: #0d3938;
+}
+.summary-card-ui-full-bleed-cover .share-card.cover.has-image .share-card-image::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(7, 20, 22, 0.06) 0%, rgba(7, 20, 22, 0.12) 36%, rgba(6, 39, 39, 0.94) 100%),
+    linear-gradient(90deg, rgba(7, 20, 22, 0.24), rgba(7, 20, 22, 0.02) 56%);
+}
+.summary-card-ui-full-bleed-cover .share-card.cover.has-image .share-card-image img {
+  object-fit: cover;
+  object-position: center;
+}
+.summary-card-ui-full-bleed-cover .share-card.cover.has-image > span,
+.summary-card-ui-full-bleed-cover .share-card.cover.has-image > h2,
+.summary-card-ui-full-bleed-cover .share-card.cover.has-image > p {
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.32);
+}
+.summary-card-ui-full-bleed-cover .share-card.cover.has-image > span {
+  top: 24px;
+  left: 24px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  width: fit-content;
+  max-width: calc(100% - 48px);
+  padding: 0 13px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.92);
+  color: #0d3938;
+  text-shadow: none;
+}
+.summary-card-ui-full-bleed-cover .share-card.cover.has-image > h2 {
+  left: 24px;
+  right: 24px;
+  bottom: 78px;
+  color: #fff;
+  font-size: clamp(34px, 4.7vw, 52px);
+  line-height: 1.08;
+}
+.summary-card-ui-full-bleed-cover .share-card.cover.has-image > p {
+  left: 24px;
+  right: 24px;
+  bottom: 26px;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: clamp(17px, 2.1vw, 22px);
+  line-height: 1.32;
+  font-weight: 900;
+}
 .share-controls {
   display: flex;
   align-items: center;
