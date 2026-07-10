@@ -169,9 +169,7 @@
   });
 
   root.querySelector("[data-routine-copy]")?.addEventListener("click", async () => {
-    const text = `${presets[mode].title}
-${currentSteps().map((step, index) => `${index + 1}. ${step}`).join("
-")}`;
+    const text = `${presets[mode].title}\n${currentSteps().map((step, index) => `${index + 1}. ${step}`).join("\n")}`;
     try {
       await navigator.clipboard.writeText(text);
       setStatus("순서를 복사했어요.");
