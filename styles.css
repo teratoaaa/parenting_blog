@@ -1355,6 +1355,47 @@ body.summary-dialog-open {
   font-size: clamp(27px, 3.25vw, 37px);
   line-height: 1.12;
 }
+.share-card.cover.has-image:not(.generated-card) {
+  justify-content: flex-start;
+  gap: 0;
+  padding: 0 24px 24px;
+  background: #0d3938;
+}
+.share-card.cover.has-image:not(.generated-card)::after,
+.share-card.cover.has-image:not(.generated-card) .share-card-image::after {
+  display: none;
+}
+.share-card.cover.has-image:not(.generated-card) .share-card-image {
+  position: relative;
+  inset: auto;
+  width: calc(100% + 48px);
+  height: auto;
+  aspect-ratio: 16 / 9;
+  margin: 0 -24px 22px;
+  border-radius: 20px 20px 0 0;
+  background: #fffaf4;
+}
+.share-card.cover.has-image:not(.generated-card) .share-card-image img {
+  object-fit: contain;
+  object-position: center;
+}
+.share-card.cover.has-image:not(.generated-card) > span {
+  position: static;
+  min-height: 32px;
+  max-width: 100%;
+  margin: auto 0 14px;
+}
+.share-card.cover.has-image:not(.generated-card) > h2 {
+  font-size: 34px;
+  line-height: 1.16;
+  text-shadow: none;
+}
+.share-card.cover.has-image:not(.generated-card) > p {
+  margin: 12px 0 auto;
+  font-size: 15px;
+  line-height: 1.5;
+  text-shadow: none;
+}
 .share-controls {
   display: flex;
   align-items: center;
@@ -1663,6 +1704,9 @@ body.summary-dialog-open {
   .share-card p,
   .share-card.has-image p {
     font-size: 17px;
+  }
+  .share-card.cover.has-image:not(.generated-card) > h2 {
+    font-size: 28px;
   }
   .share-step {
     grid-template-columns: 36px minmax(0, 1fr);
